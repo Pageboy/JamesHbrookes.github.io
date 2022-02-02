@@ -78,3 +78,66 @@ span.stage_directions_inline {
 
 span.character_beforespeech {
 }
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(153, 76, 76);
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+main {
+    width: 90%;
+    border: 20px solid brown;
+    margin:0 auto;
+display: flex;
+flex-wrap: wrap;
+background-color: rgb(153, 76, 76);
+}
+
+figure {
+    width:100%;
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+main {
+
+    width: 100%;
+    padding:0;
+    border: none;
+}
+
+p {
+    font-size: .9em;
+}
+
+}
+
+
+section {
+    flex-basis: 30px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin:0.5rem;
+    background-color: indianred;
+    color: white;
+    padding: 80px;
+}
+
+img {
+    width: 100%;
+}
+
