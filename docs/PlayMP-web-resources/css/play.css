@@ -1,0 +1,279 @@
+/* This stylesheet is where to add styles for your Shakespeare Play */
+/*We usually add something general for the body*/
+* {
+  margin: 5;
+  padding: 5;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;
+  border: brown;
+  background-color: rgb(153, 76, 76);;
+  margin: 0 0 0em;
+  display: block;
+  
+  /*your style rules go in here */
+}
+img {
+  width: 1000px;
+  display: block;
+  margin: 50px auto 50px auto;
+
+}
+
+main {
+  border:30px solid brown;
+    background-color: beige;
+
+    width: 600%;
+    display: block;
+    max-width: 700px;
+    padding: 5em 4em 4em 5em;
+    margin: auto;margin-top: 10em;
+    min-width: none;
+
+}
+
+section.nav {
+  /* this is where your nav list items will be */
+}
+
+section {
+  border: 60;
+}
+
+/*Here follows the class names that you will have in your html*/
+/*You may have more if you added styles in InDesign*/
+/*You need to add the style attributes between the curly brackets*/
+
+/* the following may not be used but it doesn't matter if they are listed here  */
+
+/* If you ahe created any new styles in InDesign and used export tags then you need to add them here */
+
+li.TOC-Heading-1 { font-size: 20px; }
+
+section.dramatis { 
+  border: 100px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color; green
+  font-size: 100px;
+  text-align: center;
+  margin: auto; 
+}
+section.play { font-family: Arial, Helvetica, sans-serif;
+  border: 10px solid green;
+
+}
+div.sceneImage {
+}
+h1.act {
+  background-color: black;
+  color: brown;
+  text-align: center;
+  font-size: 60px;
+  padding: 8px;
+
+  }
+}
+p.character_name{ 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: black;
+  font-size: 120px;
+
+}
+p.character {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  display:block;
+  left: 10em;
+  top: 2.5em;
+  width: 11em;
+  position: relative
+  
+
+  
+}
+h1.dramatishead { color: black;
+  text-align: center;
+  font-size: 60px;
+  margin-top: 1em; 
+  
+}
+h2.firstscene { color: black;
+  text-align: center;
+  font-size: 40px;
+}
+h2.location {
+  text-align: center;
+}
+p.play_location {
+  text-align: center;
+}
+p.prose {
+  font-size: 20px;
+  text-align: center;
+  position: fixed;
+  resize: none;
+  
+}
+h2.scene { text-align: center;
+  font-size: 40px;
+  border: 3px solid black;
+  width: 100%;
+  border: solid black;
+  
+
+  ;
+}
+p.song {
+}
+
+h2.stagedirection{
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+
+}
+.verseline {
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  resize: none;
+ 
+
+  
+}
+span.character_role {
+  text-align: center;
+}
+span.stage_directions_inline {
+}
+
+span.character_beforespeech {
+  
+    
+}
+
+  
+@media screen and (max-width: 700px) {
+  dramatis,
+  .play, .dramatis {
+    width: 100%;
+    padding: 3em 3em;
+  }
+}
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  font-family: 'Franklin Gothic Medium';
+  margin: 2em;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: beige
+
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  flex: 0 0 21rem; /*the same as flex-grow, flex-shrink, flex-basis */
+  text-align: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 0.5rem 0rem;
+  display: block;
+}
+
+nav ul li:hover {
+  background-color: white;
+}
+nav ul li a:hover {
+  color: black;
+}
+
+
+li ul {
+  display: none;
+  position: absolute;
+  background-color: beige;
+}
+
+nav ul li:hover ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li ul li {
+  flex: 0 1 auto;
+  width: 18rem; /* the same as the value for flex-basis on the parent li */
+}
+
+@media screen and (max-width: 700px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: block;
+    float: right;
+    cursor: pointer;
+  }
+
+  /*   ~ the tilda points to the next sibling selector */
+
+  input[type="checkbox"]:checked ~ ul {
+    display: block;
+  }
+
+  li ul {
+    position: static;
+  }
+  nav ul li {
+    flex: 0 1 auto; /*the same as flex-grow, flex-shrink, flex-basis */
+    width: 100%;
+  }
+}
+
+
+
